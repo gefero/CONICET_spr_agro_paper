@@ -1,11 +1,11 @@
-# Las estructuras agrarias concretas en Argentina. Un análisis de alta resolución espacial. Material de replicación
+# Desarrollo capitalista, globalización y cuestión agraria en el siglo XXI. Material de replicación
 
 > Adriana Chazarreta
 > Germán Rosati
 
 ## Repositorio de código
 Este repositorio contiene el código para la replicación de los gráficos, tablas
-y mapas del libro.
+y mapas del paper.
 
 ## Estructura de las carpetas
 ```
@@ -14,8 +14,8 @@ y mapas del libro.
 └── src
 ```
 
-- `src` contiene el código para replicar los gráficos y tablas basados en la Muestra Longitudinal de Empleo Registrado (MLER)
-- `data` contiene datos crudos y procesados. Existen una gran cantidad de tablas bastante  pesadas en los análisis por eso no se pudieron subir al repositorio. 
+- `src` contiene el código para replicar los gráficos y tablas
+- `data` contiene datos crudos y procesados. Existen una cierta cantidad de tablas  pesadas en los análisis por eso no se pudieron subir al repositorio. 
 
 ## Fuentes de datos
 

@@ -1,0 +1,323 @@
+anio,provincia,provincia_id,rango_superficie,item,EAP_con_limites,hectareas
+2002,Buenos Aires,6,0 - 5,Holdings with land size 0-<5,2180,6246.7
+2002,Buenos Aires,6,5.1 - 10,Holdings with land size 5-<10,1426,11476.1
+2002,Buenos Aires,6,10.1 - 25,Holdings with land size 10-<20,2918,52822
+2002,Buenos Aires,6,25.1 - 50,Holdings with land size 20-<50,4527,176788.9
+2002,Buenos Aires,6,50.1 - 100,Holdings with land size 50-<100,7017,535579.6
+2002,Buenos Aires,6,100.1 - 200,Holdings with land size 100-<200,8827,1309159.2
+2002,Buenos Aires,6,200.1 - 500,Holdings with land size 200-<500,11449,3736838.8
+2002,Buenos Aires,6,500.1 - 1000 ,Holdings with land size 500-<1000,6433,4548668.6
+2002,Buenos Aires,6,1000.1 - 2500,Holdings with land size >=1000,4588,7011887.4
+2002,Buenos Aires,6,2500.1 - 5000,Holdings with land size >=1000,1265,4333700.7
+2002,Buenos Aires,6,5000.1 - 7500 ,Holdings with land size >=1000,291,1756911.3
+2002,Buenos Aires,6,7500.1 - 10000,Holdings with land size >=1000,94,807521.2
+2002,Buenos Aires,6,10000.1 - 20000,Holdings with land size >=1000,78,1070255
+2002,Buenos Aires,6,20000 +,Holdings with land size >=1000,14,430814
+2002,Catamarca,10,0 - 5,Holdings with land size 0-<5,3745,7386
+2002,Catamarca,10,5.1 - 10,Holdings with land size 5-<10,768,5677
+2002,Catamarca,10,10.1 - 25,Holdings with land size 10-<20,589,9846.6
+2002,Catamarca,10,25.1 - 50,Holdings with land size 20-<50,340,12225.9
+2002,Catamarca,10,50.1 - 100,Holdings with land size 50-<100,237,18230.7
+2002,Catamarca,10,100.1 - 200,Holdings with land size 100-<200,264,41779.3
+2002,Catamarca,10,200.1 - 500,Holdings with land size 200-<500,304,99239.9
+2002,Catamarca,10,500.1 - 1000 ,Holdings with land size 500-<1000,190,142244.7
+2002,Catamarca,10,1000.1 - 2500,Holdings with land size >=1000,133,210666.1
+2002,Catamarca,10,2500.1 - 5000,Holdings with land size >=1000,63,213670
+2002,Catamarca,10,5000.1 - 7500 ,Holdings with land size >=1000,19,117509.5
+2002,Catamarca,10,7500.1 - 10000,Holdings with land size >=1000,16,139484.6
+2002,Catamarca,10,10000.1 - 20000,Holdings with land size >=1000,17,234580.6
+2002,Catamarca,10,20000 +,Holdings with land size >=1000,9,336264.8
+2002,Chaco,22,0 - 5,Holdings with land size 0-<5,818,2692.2
+2002,Chaco,22,5.1 - 10,Holdings with land size 5-<10,607,4931.4
+2002,Chaco,22,10.1 - 25,Holdings with land size 10-<20,1169,22306
+2002,Chaco,22,25.1 - 50,Holdings with land size 20-<50,2101,89282.7
+2002,Chaco,22,50.1 - 100,Holdings with land size 50-<100,3023,254043.2
+2002,Chaco,22,100.1 - 200,Holdings with land size 100-<200,2656,405957
+2002,Chaco,22,200.1 - 500,Holdings with land size 200-<500,2883,937545.1
+2002,Chaco,22,500.1 - 1000 ,Holdings with land size 500-<1000,1246,878197.8
+2002,Chaco,22,1000.1 - 2500,Holdings with land size >=1000,901,1432254.6
+2002,Chaco,22,2500.1 - 5000,Holdings with land size >=1000,190,667928.5
+2002,Chaco,22,5000.1 - 7500 ,Holdings with land size >=1000,46,279011
+2002,Chaco,22,7500.1 - 10000,Holdings with land size >=1000,22,191570.6
+2002,Chaco,22,10000.1 - 20000,Holdings with land size >=1000,24,332503
+2002,Chaco,22,20000 +,Holdings with land size >=1000,8,401508.7
+2002,Chubut,26,0 - 5,Holdings with land size 0-<5,140,412.9
+2002,Chubut,26,5.1 - 10,Holdings with land size 5-<10,111,889.4
+2002,Chubut,26,10.1 - 25,Holdings with land size 10-<20,232,4153.4
+2002,Chubut,26,25.1 - 50,Holdings with land size 20-<50,211,8343.3
+2002,Chubut,26,50.1 - 100,Holdings with land size 50-<100,222,17074.4
+2002,Chubut,26,100.1 - 200,Holdings with land size 100-<200,145,22302.2
+2002,Chubut,26,200.1 - 500,Holdings with land size 200-<500,243,83013.4
+2002,Chubut,26,500.1 - 1000 ,Holdings with land size 500-<1000,282,197282.3
+2002,Chubut,26,1000.1 - 2500,Holdings with land size >=1000,506,934331.4
+2002,Chubut,26,2500.1 - 5000,Holdings with land size >=1000,422,1653946
+2002,Chubut,26,5000.1 - 7500 ,Holdings with land size >=1000,244,1566187.2
+2002,Chubut,26,7500.1 - 10000,Holdings with land size >=1000,231,2115902.7
+2002,Chubut,26,10000.1 - 20000,Holdings with land size >=1000,372,5512444.5
+2002,Chubut,26,20000 +,Holdings with land size >=1000,213,7088978.1
+2002,C�rdoba,14,0 - 5,Holdings with land size 0-<5,809,2174.6
+2002,C�rdoba,14,5.1 - 10,Holdings with land size 5-<10,685,5353.8
+2002,C�rdoba,14,10.1 - 25,Holdings with land size 10-<20,1206,21737.5
+2002,C�rdoba,14,25.1 - 50,Holdings with land size 20-<50,1705,66820.8
+2002,C�rdoba,14,50.1 - 100,Holdings with land size 50-<100,3295,259977.8
+2002,C�rdoba,14,100.1 - 200,Holdings with land size 100-<200,5043,765840.4
+2002,C�rdoba,14,200.1 - 500,Holdings with land size 200-<500,6964,2273460.6
+2002,C�rdoba,14,500.1 - 1000 ,Holdings with land size 500-<1000,3334,2353869.7
+2002,C�rdoba,14,1000.1 - 2500,Holdings with land size >=1000,1872,2825344.3
+2002,C�rdoba,14,2500.1 - 5000,Holdings with land size >=1000,490,1706678.9
+2002,C�rdoba,14,5000.1 - 7500 ,Holdings with land size >=1000,124,743890.5
+2002,C�rdoba,14,7500.1 - 10000,Holdings with land size >=1000,48,414986
+2002,C�rdoba,14,10000.1 - 20000,Holdings with land size >=1000,39,503447.2
+2002,C�rdoba,14,20000 +,Holdings with land size >=1000,6,300675.7
+2002,Corrientes,18,0 - 5,Holdings with land size 0-<5,2286,6448.5
+2002,Corrientes,18,5.1 - 10,Holdings with land size 5-<10,1385,11099.4
+2002,Corrientes,18,10.1 - 25,Holdings with land size 10-<20,2506,43277.9
+2002,Corrientes,18,25.1 - 50,Holdings with land size 20-<50,2112,79991.7
+2002,Corrientes,18,50.1 - 100,Holdings with land size 50-<100,1912,140664.3
+2002,Corrientes,18,100.1 - 200,Holdings with land size 100-<200,1367,197308.3
+2002,Corrientes,18,200.1 - 500,Holdings with land size 200-<500,1258,410094.8
+2002,Corrientes,18,500.1 - 1000 ,Holdings with land size 500-<1000,648,467909.6
+2002,Corrientes,18,1000.1 - 2500,Holdings with land size >=1000,607,963653.5
+2002,Corrientes,18,2500.1 - 5000,Holdings with land size >=1000,317,1098678.2
+2002,Corrientes,18,5000.1 - 7500 ,Holdings with land size >=1000,107,646182.2
+2002,Corrientes,18,7500.1 - 10000,Holdings with land size >=1000,57,498081.3
+2002,Corrientes,18,10000.1 - 20000,Holdings with land size >=1000,73,943068.8
+2002,Corrientes,18,20000 +,Holdings with land size >=1000,38,1354114.5
+2002,Entre R�os,30,0 - 5,Holdings with land size 0-<5,841,2306.4
+2002,Entre R�os,30,5.1 - 10,Holdings with land size 5-<10,854,6915.7
+2002,Entre R�os,30,10.1 - 25,Holdings with land size 10-<20,2675,49456.9
+2002,Entre R�os,30,25.1 - 50,Holdings with land size 20-<50,3911,150219.5
+2002,Entre R�os,30,50.1 - 100,Holdings with land size 50-<100,4291,316945.6
+2002,Entre R�os,30,100.1 - 200,Holdings with land size 100-<200,3475,502018.3
+2002,Entre R�os,30,200.1 - 500,Holdings with land size 200-<500,2863,911206.4
+2002,Entre R�os,30,500.1 - 1000 ,Holdings with land size 500-<1000,1333,936671.5
+2002,Entre R�os,30,1000.1 - 2500,Holdings with land size >=1000,917,1403081.8
+2002,Entre R�os,30,2500.1 - 5000,Holdings with land size >=1000,290,992359.4
+2002,Entre R�os,30,5000.1 - 7500 ,Holdings with land size >=1000,76,448310.5
+2002,Entre R�os,30,7500.1 - 10000,Holdings with land size >=1000,26,220183.9
+2002,Entre R�os,30,10000.1 - 20000,Holdings with land size >=1000,20,267790.9
+2002,Entre R�os,30,20000 +,Holdings with land size >=1000,5,144045.8
+2002,Formosa,34,0 - 5,Holdings with land size 0-<5,1056,3358.2
+2002,Formosa,34,5.1 - 10,Holdings with land size 5-<10,942,7354.1
+2002,Formosa,34,10.1 - 25,Holdings with land size 10-<20,1239,21474.4
+2002,Formosa,34,25.1 - 50,Holdings with land size 20-<50,943,35652.5
+2002,Formosa,34,50.1 - 100,Holdings with land size 50-<100,911,71526.3
+2002,Formosa,34,100.1 - 200,Holdings with land size 100-<200,676,103581.6
+2002,Formosa,34,200.1 - 500,Holdings with land size 200-<500,974,333434.9
+2002,Formosa,34,500.1 - 1000 ,Holdings with land size 500-<1000,892,650253.8
+2002,Formosa,34,1000.1 - 2500,Holdings with land size >=1000,961,1558748.5
+2002,Formosa,34,2500.1 - 5000,Holdings with land size >=1000,265,932661.5
+2002,Formosa,34,5000.1 - 7500 ,Holdings with land size >=1000,58,357831.5
+2002,Formosa,34,7500.1 - 10000,Holdings with land size >=1000,38,333150.5
+2002,Formosa,34,10000.1 - 20000,Holdings with land size >=1000,28,415066.7
+2002,Formosa,34,20000 +,Holdings with land size >=1000,11,354512.6
+2002,Jujuy,38,0 - 5,Holdings with land size 0-<5,1604,3343.4
+2002,Jujuy,38,5.1 - 10,Holdings with land size 5-<10,426,3263.6
+2002,Jujuy,38,10.1 - 25,Holdings with land size 10-<20,406,6784.2
+2002,Jujuy,38,25.1 - 50,Holdings with land size 20-<50,279,10364.7
+2002,Jujuy,38,50.1 - 100,Holdings with land size 50-<100,249,19235.4
+2002,Jujuy,38,100.1 - 200,Holdings with land size 100-<200,271,41050
+2002,Jujuy,38,200.1 - 500,Holdings with land size 200-<500,357,121966.3
+2002,Jujuy,38,500.1 - 1000 ,Holdings with land size 500-<1000,245,177909.3
+2002,Jujuy,38,1000.1 - 2500,Holdings with land size >=1000,155,241377.8
+2002,Jujuy,38,2500.1 - 5000,Holdings with land size >=1000,45,153473.6
+2002,Jujuy,38,5000.1 - 7500 ,Holdings with land size >=1000,9,52302.1
+2002,Jujuy,38,7500.1 - 10000,Holdings with land size >=1000,6,56592.5
+2002,Jujuy,38,10000.1 - 20000,Holdings with land size >=1000,3,46503
+2002,Jujuy,38,20000 +,Holdings with land size >=1000,6,347896.6
+2002,La Pampa,42,0 - 5,Holdings with land size 0-<5,71,291.2
+2002,La Pampa,42,5.1 - 10,Holdings with land size 5-<10,42,324
+2002,La Pampa,42,10.1 - 25,Holdings with land size 10-<20,190,3551.5
+2002,La Pampa,42,25.1 - 50,Holdings with land size 20-<50,258,9856.3
+2002,La Pampa,42,50.1 - 100,Holdings with land size 50-<100,500,42766.4
+2002,La Pampa,42,100.1 - 200,Holdings with land size 100-<200,1003,160472.6
+2002,La Pampa,42,200.1 - 500,Holdings with land size 200-<500,1880,626242.7
+2002,La Pampa,42,500.1 - 1000 ,Holdings with land size 500-<1000,1320,943492.5
+2002,La Pampa,42,1000.1 - 2500,Holdings with land size >=1000,1352,2365143.5
+2002,La Pampa,42,2500.1 - 5000,Holdings with land size >=1000,632,2475939.7
+2002,La Pampa,42,5000.1 - 7500 ,Holdings with land size >=1000,199,1275391.5
+2002,La Pampa,42,7500.1 - 10000,Holdings with land size >=1000,157,1477827.5
+2002,La Pampa,42,10000.1 - 20000,Holdings with land size >=1000,128,1857813
+2002,La Pampa,42,20000 +,Holdings with land size >=1000,42,1495896.6
+2002,La Rioja,46,0 - 5,Holdings with land size 0-<5,2850,4608.7
+2002,La Rioja,46,5.1 - 10,Holdings with land size 5-<10,407,3069.6
+2002,La Rioja,46,10.1 - 25,Holdings with land size 10-<20,381,6329.6
+2002,La Rioja,46,25.1 - 50,Holdings with land size 20-<50,261,9928.6
+2002,La Rioja,46,50.1 - 100,Holdings with land size 50-<100,319,25013.6
+2002,La Rioja,46,100.1 - 200,Holdings with land size 100-<200,339,53987.7
+2002,La Rioja,46,200.1 - 500,Holdings with land size 200-<500,510,175616.4
+2002,La Rioja,46,500.1 - 1000 ,Holdings with land size 500-<1000,315,228234.7
+2002,La Rioja,46,1000.1 - 2500,Holdings with land size >=1000,206,345267.3
+2002,La Rioja,46,2500.1 - 5000,Holdings with land size >=1000,137,501563.8
+2002,La Rioja,46,5000.1 - 7500 ,Holdings with land size >=1000,54,332158
+2002,La Rioja,46,7500.1 - 10000,Holdings with land size >=1000,25,211435
+2002,La Rioja,46,10000.1 - 20000,Holdings with land size >=1000,33,443826
+2002,La Rioja,46,20000 +,Holdings with land size >=1000,15,728458
+2002,Mendoza,50,0 - 5,Holdings with land size 0-<5,11600,29775.9
+2002,Mendoza,50,5.1 - 10,Holdings with land size 5-<10,5678,43484.2
+2002,Mendoza,50,10.1 - 25,Holdings with land size 10-<20,5543,90693.1
+2002,Mendoza,50,25.1 - 50,Holdings with land size 20-<50,2437,87681.7
+2002,Mendoza,50,50.1 - 100,Holdings with land size 50-<100,1183,85032.5
+2002,Mendoza,50,100.1 - 200,Holdings with land size 100-<200,609,85460.9
+2002,Mendoza,50,200.1 - 500,Holdings with land size 200-<500,313,98145.4
+2002,Mendoza,50,500.1 - 1000 ,Holdings with land size 500-<1000,185,140498.2
+2002,Mendoza,50,1000.1 - 2500,Holdings with land size >=1000,266,459361.5
+2002,Mendoza,50,2500.1 - 5000,Holdings with land size >=1000,208,768997.4
+2002,Mendoza,50,5000.1 - 7500 ,Holdings with land size >=1000,102,635854
+2002,Mendoza,50,7500.1 - 10000,Holdings with land size >=1000,61,539075.2
+2002,Mendoza,50,10000.1 - 20000,Holdings with land size >=1000,91,1259190.3
+2002,Mendoza,50,20000 +,Holdings with land size >=1000,53,2098880
+2002,Misiones,54,0 - 5,Holdings with land size 0-<5,1159,4257.2
+2002,Misiones,54,5.1 - 10,Holdings with land size 5-<10,2297,19180.7
+2002,Misiones,54,10.1 - 25,Holdings with land size 10-<20,11289,216943.4
+2002,Misiones,54,25.1 - 50,Holdings with land size 20-<50,7115,262437.8
+2002,Misiones,54,50.1 - 100,Holdings with land size 50-<100,3273,228966.4
+2002,Misiones,54,100.1 - 200,Holdings with land size 100-<200,1102,153353.1
+2002,Misiones,54,200.1 - 500,Holdings with land size 200-<500,527,159430.8
+2002,Misiones,54,500.1 - 1000 ,Holdings with land size 500-<1000,149,106308.8
+2002,Misiones,54,1000.1 - 2500,Holdings with land size >=1000,99,150813.2
+2002,Misiones,54,2500.1 - 5000,Holdings with land size >=1000,26,94805.3
+2002,Misiones,54,5000.1 - 7500 ,Holdings with land size >=1000,9,58649.1
+2002,Misiones,54,7500.1 - 10000,Holdings with land size >=1000,8,68710.1
+2002,Misiones,54,10000.1 - 20000,Holdings with land size >=1000,11,153350.8
+2002,Misiones,54,20000 +,Holdings with land size >=1000,8,390598.1
+2002,Neuqu�n,58,0 - 5,Holdings with land size 0-<5,644,1868
+2002,Neuqu�n,58,5.1 - 10,Holdings with land size 5-<10,426,3260.9
+2002,Neuqu�n,58,10.1 - 25,Holdings with land size 10-<20,401,6463.6
+2002,Neuqu�n,58,25.1 - 50,Holdings with land size 20-<50,120,4342.2
+2002,Neuqu�n,58,50.1 - 100,Holdings with land size 50-<100,79,5735.1
+2002,Neuqu�n,58,100.1 - 200,Holdings with land size 100-<200,55,8210.5
+2002,Neuqu�n,58,200.1 - 500,Holdings with land size 200-<500,130,45688.3
+2002,Neuqu�n,58,500.1 - 1000 ,Holdings with land size 500-<1000,116,81563.2
+2002,Neuqu�n,58,1000.1 - 2500,Holdings with land size >=1000,92,144386.1
+2002,Neuqu�n,58,2500.1 - 5000,Holdings with land size >=1000,42,159594.4
+2002,Neuqu�n,58,5000.1 - 7500 ,Holdings with land size >=1000,18,114774.5
+2002,Neuqu�n,58,7500.1 - 10000,Holdings with land size >=1000,16,137415.1
+2002,Neuqu�n,58,10000.1 - 20000,Holdings with land size >=1000,34,484331.6
+2002,Neuqu�n,58,20000 +,Holdings with land size >=1000,25,948066.2
+2002,R�o Negro,62,0 - 5,Holdings with land size 0-<5,548,2110.2
+2002,R�o Negro,62,5.1 - 10,Holdings with land size 5-<10,912,6956.3
+2002,R�o Negro,62,10.1 - 25,Holdings with land size 10-<20,1436,23975
+2002,R�o Negro,62,25.1 - 50,Holdings with land size 20-<50,649,22811.5
+2002,R�o Negro,62,50.1 - 100,Holdings with land size 50-<100,366,26985.9
+2002,R�o Negro,62,100.1 - 200,Holdings with land size 100-<200,252,36644
+2002,R�o Negro,62,200.1 - 500,Holdings with land size 200-<500,266,88813.4
+2002,R�o Negro,62,500.1 - 1000 ,Holdings with land size 500-<1000,285,212987.5
+2002,R�o Negro,62,1000.1 - 2500,Holdings with land size >=1000,775,1426148.2
+2002,R�o Negro,62,2500.1 - 5000,Holdings with land size >=1000,691,2656749.2
+2002,R�o Negro,62,5000.1 - 7500 ,Holdings with land size >=1000,317,1988936.8
+2002,R�o Negro,62,7500.1 - 10000,Holdings with land size >=1000,182,1631967.8
+2002,R�o Negro,62,10000.1 - 20000,Holdings with land size >=1000,267,3671360.9
+2002,R�o Negro,62,20000 +,Holdings with land size >=1000,89,2920023
+2002,Salta,66,0 - 5,Holdings with land size 0-<5,2119,4705
+2002,Salta,66,5.1 - 10,Holdings with land size 5-<10,553,4291.7
+2002,Salta,66,10.1 - 25,Holdings with land size 10-<20,504,8561.8
+2002,Salta,66,25.1 - 50,Holdings with land size 20-<50,339,12961.1
+2002,Salta,66,50.1 - 100,Holdings with land size 50-<100,319,24446.8
+2002,Salta,66,100.1 - 200,Holdings with land size 100-<200,294,46022
+2002,Salta,66,200.1 - 500,Holdings with land size 200-<500,457,162484.6
+2002,Salta,66,500.1 - 1000 ,Holdings with land size 500-<1000,346,257658.3
+2002,Salta,66,1000.1 - 2500,Holdings with land size >=1000,323,539633.8
+2002,Salta,66,2500.1 - 5000,Holdings with land size >=1000,146,506137.9
+2002,Salta,66,5000.1 - 7500 ,Holdings with land size >=1000,66,403824.2
+2002,Salta,66,7500.1 - 10000,Holdings with land size >=1000,34,297128.4
+2002,Salta,66,10000.1 - 20000,Holdings with land size >=1000,43,606841.6
+2002,Salta,66,20000 +,Holdings with land size >=1000,32,1394802
+2002,San Juan,70,0 - 5,Holdings with land size 0-<5,3403,8633.3
+2002,San Juan,70,5.1 - 10,Holdings with land size 5-<10,1458,11085.9
+2002,San Juan,70,10.1 - 25,Holdings with land size 10-<20,1379,22407.8
+2002,San Juan,70,25.1 - 50,Holdings with land size 20-<50,731,26090
+2002,San Juan,70,50.1 - 100,Holdings with land size 50-<100,460,33403.3
+2002,San Juan,70,100.1 - 200,Holdings with land size 100-<200,225,32707.4
+2002,San Juan,70,200.1 - 500,Holdings with land size 200-<500,148,44718.2
+2002,San Juan,70,500.1 - 1000 ,Holdings with land size 500-<1000,38,26434.5
+2002,San Juan,70,1000.1 - 2500,Holdings with land size >=1000,38,60829.3
+2002,San Juan,70,2500.1 - 5000,Holdings with land size >=1000,21,70373.2
+2002,San Juan,70,5000.1 - 7500 ,Holdings with land size >=1000,8,50439
+2002,San Juan,70,7500.1 - 10000,Holdings with land size >=1000,6,55057.7
+2002,San Juan,70,10000.1 - 20000,Holdings with land size >=1000,6,91045
+2002,San Juan,70,20000 +,Holdings with land size >=1000,6,223000
+2002,San Luis,74,0 - 5,Holdings with land size 0-<5,69,229
+2002,San Luis,74,5.1 - 10,Holdings with land size 5-<10,55,444.3
+2002,San Luis,74,10.1 - 25,Holdings with land size 10-<20,137,2477.9
+2002,San Luis,74,25.1 - 50,Holdings with land size 20-<50,278,11149
+2002,San Luis,74,50.1 - 100,Holdings with land size 50-<100,452,35227.3
+2002,San Luis,74,100.1 - 200,Holdings with land size 100-<200,666,102228.9
+2002,San Luis,74,200.1 - 500,Holdings with land size 200-<500,951,317506.4
+2002,San Luis,74,500.1 - 1000 ,Holdings with land size 500-<1000,629,459219.7
+2002,San Luis,74,1000.1 - 2500,Holdings with land size >=1000,516,851877.7
+2002,San Luis,74,2500.1 - 5000,Holdings with land size >=1000,251,880812
+2002,San Luis,74,5000.1 - 7500 ,Holdings with land size >=1000,76,474412.4
+2002,San Luis,74,7500.1 - 10000,Holdings with land size >=1000,54,468035
+2002,San Luis,74,10000.1 - 20000,Holdings with land size >=1000,50,662798
+2002,San Luis,74,20000 +,Holdings with land size >=1000,32,1121970
+2002,Santa Cruz,78,0 - 5,Holdings with land size 0-<5,24,82.7
+2002,Santa Cruz,78,5.1 - 10,Holdings with land size 5-<10,11,91
+2002,Santa Cruz,78,10.1 - 25,Holdings with land size 10-<20,10,0
+2002,Santa Cruz,78,25.1 - 50,Holdings with land size 20-<50,4,179
+2002,Santa Cruz,78,50.1 - 100,Holdings with land size 50-<100,5,296
+2002,Santa Cruz,78,100.1 - 200,Holdings with land size 100-<200,1,0
+2002,Santa Cruz,78,200.1 - 500,Holdings with land size 200-<500,5,1608
+2002,Santa Cruz,78,500.1 - 1000 ,Holdings with land size 500-<1000,3,2409
+2002,Santa Cruz,78,1000.1 - 2500,Holdings with land size >=1000,20,43457
+2002,Santa Cruz,78,2500.1 - 5000,Holdings with land size >=1000,40,176201
+2002,Santa Cruz,78,5000.1 - 7500 ,Holdings with land size >=1000,47,308853
+2002,Santa Cruz,78,7500.1 - 10000,Holdings with land size >=1000,109,1040051
+2002,Santa Cruz,78,10000.1 - 20000,Holdings with land size >=1000,396,6821462.2
+2002,Santa Cruz,78,20000 +,Holdings with land size >=1000,269,11489236.3
+2002,Santa Fe,82,0 - 5,Holdings with land size 0-<5,583,1867.7
+2002,Santa Fe,82,5.1 - 10,Holdings with land size 5-<10,685,5500.1
+2002,Santa Fe,82,10.1 - 25,Holdings with land size 10-<20,1869,34215.5
+2002,Santa Fe,82,25.1 - 50,Holdings with land size 20-<50,2996,116934.9
+2002,Santa Fe,82,50.1 - 100,Holdings with land size 50-<100,4996,380488.2
+2002,Santa Fe,82,100.1 - 200,Holdings with land size 100-<200,5946,870198.5
+2002,Santa Fe,82,200.1 - 500,Holdings with land size 200-<500,6196,1969458.1
+2002,Santa Fe,82,500.1 - 1000 ,Holdings with land size 500-<1000,2558,1794313.3
+2002,Santa Fe,82,1000.1 - 2500,Holdings with land size >=1000,1565,2363137
+2002,Santa Fe,82,2500.1 - 5000,Holdings with land size >=1000,430,1449897.4
+2002,Santa Fe,82,5000.1 - 7500 ,Holdings with land size >=1000,102,619720.3
+2002,Santa Fe,82,7500.1 - 10000,Holdings with land size >=1000,38,336394.5
+2002,Santa Fe,82,10000.1 - 20000,Holdings with land size >=1000,53,692328.7
+2002,Santa Fe,82,20000 +,Holdings with land size >=1000,17,617199
+2002,Santiago del Estero,86,0 - 5,Holdings with land size 0-<5,1439,4617.4
+2002,Santiago del Estero,86,5.1 - 10,Holdings with land size 5-<10,1159,9647.3
+2002,Santiago del Estero,86,10.1 - 25,Holdings with land size 10-<20,1743,33427.2
+2002,Santiago del Estero,86,25.1 - 50,Holdings with land size 20-<50,1350,55201.7
+2002,Santiago del Estero,86,50.1 - 100,Holdings with land size 50-<100,1121,90717.2
+2002,Santiago del Estero,86,100.1 - 200,Holdings with land size 100-<200,994,153164
+2002,Santiago del Estero,86,200.1 - 500,Holdings with land size 200-<500,1228,418985.1
+2002,Santiago del Estero,86,500.1 - 1000 ,Holdings with land size 500-<1000,736,540062.7
+2002,Santiago del Estero,86,1000.1 - 2500,Holdings with land size >=1000,599,952411.7
+2002,Santiago del Estero,86,2500.1 - 5000,Holdings with land size >=1000,255,929169
+2002,Santiago del Estero,86,5000.1 - 7500 ,Holdings with land size >=1000,94,594030
+2002,Santiago del Estero,86,7500.1 - 10000,Holdings with land size >=1000,42,366925
+2002,Santiago del Estero,86,10000.1 - 20000,Holdings with land size >=1000,55,788014
+2002,Santiago del Estero,86,20000 +,Holdings with land size >=1000,15,457261
+2002,Tierra del Fuego,94,0 - 5,Holdings with land size 0-<5,19,39.8
+2002,Tierra del Fuego,94,5.1 - 10,Holdings with land size 5-<10,4,33
+2002,Tierra del Fuego,94,10.1 - 25,Holdings with land size 10-<20,1,0
+2002,Tierra del Fuego,94,25.1 - 50,Holdings with land size 20-<50,0,0
+2002,Tierra del Fuego,94,50.1 - 100,Holdings with land size 50-<100,0,0
+2002,Tierra del Fuego,94,100.1 - 200,Holdings with land size 100-<200,1,0
+2002,Tierra del Fuego,94,200.1 - 500,Holdings with land size 200-<500,-,0
+2002,Tierra del Fuego,94,500.1 - 1000 ,Holdings with land size 500-<1000,5,4105
+2002,Tierra del Fuego,94,1000.1 - 2500,Holdings with land size >=1000,3,5507.9
+2002,Tierra del Fuego,94,2500.1 - 5000,Holdings with land size >=1000,4,13802
+2002,Tierra del Fuego,94,5000.1 - 7500 ,Holdings with land size >=1000,6,39520
+2002,Tierra del Fuego,94,7500.1 - 10000,Holdings with land size >=1000,9,85824
+2002,Tierra del Fuego,94,10000.1 - 20000,Holdings with land size >=1000,20,304054.4
+2002,Tierra del Fuego,94,20000 +,Holdings with land size >=1000,18,718637
+2002,Tucum�n,90,0 - 5,Holdings with land size 0-<5,2950,8440.1
+2002,Tucum�n,90,5.1 - 10,Holdings with land size 5-<10,1773,13644
+2002,Tucum�n,90,10.1 - 25,Holdings with land size 10-<20,2010,33491.9
+2002,Tucum�n,90,25.1 - 50,Holdings with land size 20-<50,1120,40865.3
+2002,Tucum�n,90,50.1 - 100,Holdings with land size 50-<100,651,47649.5
+2002,Tucum�n,90,100.1 - 200,Holdings with land size 100-<200,403,58623.2
+2002,Tucum�n,90,200.1 - 500,Holdings with land size 200-<500,305,97731.8
+2002,Tucum�n,90,500.1 - 1000 ,Holdings with land size 500-<1000,153,111271.8
+2002,Tucum�n,90,1000.1 - 2500,Holdings with land size >=1000,127,200240.4
+2002,Tucum�n,90,2500.1 - 5000,Holdings with land size >=1000,26,88206
+2002,Tucum�n,90,5000.1 - 7500 ,Holdings with land size >=1000,16,97795.2
+2002,Tucum�n,90,7500.1 - 10000,Holdings with land size >=1000,6,53314
+2002,Tucum�n,90,10000.1 - 20000,Holdings with land size >=1000,10,134294
+2002,Tucum�n,90,20000 +,Holdings with land size >=1000,5,151550

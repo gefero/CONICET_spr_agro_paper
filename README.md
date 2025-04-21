@@ -10,14 +10,18 @@ y mapas del paper.
 ## Estructura de las carpetas
 ```
 ├── data
-├── plots
+├── paper_material
 └── src
 ```
 
 - `src` contiene el código para replicar los gráficos y tablas
+- `paper_material`: contiene tablas de países y los archivos de imagen de los gráficos utilizados
 - `data` contiene datos crudos y procesados. Existen una cierta cantidad de tablas  pesadas en los análisis por eso no se pudieron subir al repositorio. 
 
 ## Fuentes de datos
 
+- [ILOSTAT](https://ilostat.ilo.org/es/)
+- [FAOSTAT](https://www.fao.org/faostat/es)
+- [World Bank Open Data](https://data.worldbank.org/)
 
 

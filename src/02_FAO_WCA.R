@@ -405,7 +405,10 @@ wca_eaps_agg %>%
         labs(x="Ronda de censos agropecuarios (FAO)",
              y= "% expl.",
              fill="Estrato de tamaño (agrupado)") +
-        theme_minimal()
+        theme_minimal() +
+        theme(text=element_text(size=16), 
+              legend.position = "bottom")
+
 
 ggsave('./paper_material/plots/grafico3.jpg',
        width = 14, height=10,

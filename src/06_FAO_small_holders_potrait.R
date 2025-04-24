@@ -7,10 +7,9 @@ pagina <- read_html(url)
 tablas <- pagina %>% html_elements("table")
 
 eaps <- tablas[[1]] %>% html_table(fill = TRUE)
-head(gdp_tabla)
 
 colnames(eaps) <- eaps[1, ]  # Asigna la primera fila como nombres de columnas
-eaps <- eaps[-1, ]           # Elimina la primera fila
+eaps <- eaps[-1, ]           # Elimina las primeras 2 filas
 colnames(eaps) <- c("region", "pais_anio", "pequeñas_explotaciones", "otras_explotaciones", "total_explotaciones")
 
 eaps<- eaps %>%
@@ -21,7 +20,6 @@ eaps<- eaps %>%
 
 eaps <- eaps %>%
         mutate(across(pequeñas_explotaciones:total_explotaciones, ~ as.numeric(gsub(",", "", .))))
-
 
 
 ###
@@ -44,30 +42,33 @@ cat("Número de tablas encontradas:", length(tablas), "\n")
 income <- tablas[[1]] %>% html_table(fill = TRUE)
 
 # 5. Limpiar encabezados
-colnames(income) <- income[1, ]
+colnames(income) <- income[2, ]
 income <- income[-1, ]
 
 # 6. Renombrar columnas (ajustar si cambia el contenido)
 colnames(income) <- c(
         "region",
         "pais_anio",
-        "ingreso_hogar",
-        "porcentaje_ingreso_cultivos",
-        "porcentaje_ingreso_agricola",
-        "porcentaje_ingreso_salarios_agr",
-        "porcentaje_ingreso_no_agr",
-        "porcentaje_ingreso_iransferencias",
-        "porcentaje_ingreso_otros",
-        "tasa_pobreza"
+        "indicador",
+        "pequeñas_explotaciones",
+        "otras_explotaciones",
+        "total_explotaciones"
 )
 
 # 7. Convertir columnas numéricas (eliminar comas y convertir a numérico)
 income <- income %>%
-        filter(porcentaje_ingreso_cultivos != "Smaller_farm") %>%
-        mutate(across(ingreso_hogar:tasa_pobreza, ~ as.numeric(gsub(",", "", .))))
+        filter(pequeñas_explotaciones != "Smaller farm")
 
-# 8. Vista previa
-print(head(income))
+income <- income %>%
+        mutate(across(pequeñas_explotaciones:total_explotaciones, ~ as.numeric(gsub(",", "", .))))
 
-# 9. (Opcional) Filtrar datos por región
-mi_tabla %>% filter(Región == "Sub-Saharan Africa")
+
+income %>% group_by(indicador) %>% summarise(max_peq = max(pequeñas_explotaciones),
+                                             min_peq = min(pequeñas_explotaciones),
+                                             med_peq = median(pequeñas_explotaciones),
+                                             mean_peq = mean(pequeñas_explotaciones),
+                                             max_rst = max(otras_explotaciones),
+                                             min_rst = min(otras_explotaciones),
+                                             med_rst = median(otras_explotaciones),
+                                             mean_rst = mean(otras_explotaciones)
+                                             )

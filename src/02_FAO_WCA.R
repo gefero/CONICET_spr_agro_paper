@@ -146,7 +146,7 @@ items <- wca %>%
                 TRUE ~ item_recoded)
         ) %>%
         mutate(item_recoded_agg = case_when(
-                item_recoded %in% c("Land size 0-5") ~ "1. Land size 0-5",
+                item_recoded %in% c("Land size 0-5", "Land size 0-<5") ~ "1. Land size 0-5",
                 item_recoded %in% c("Land size 5-<10", "Land size 10-<20", "Land size 20-<50", "Land size 50-<100") ~ "2. Land size 5-100",
                 item_recoded %in% c("Land size 100-<200", "Land size 200-<500", "Land size 200-<500") ~ "3. Land size 100.1-500",
                 item_recoded %in% c("Land size 500-<1000", "Land size >=1000") ~ "4. Land size >500",

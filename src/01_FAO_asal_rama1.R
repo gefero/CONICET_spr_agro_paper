@@ -73,12 +73,30 @@ fao_agg <- fao %>%
         ) %>%
         mutate(p_asalariados_agro = asalariados/total*100)
 
+## Proceso data Banco Mundial
+library(wbstats)
+
+wb_agro <- wb_data(indicator = "SL.AGR.EMPL.ZS",
+        start_date = 2005,
+        end_date = 2015)
+
+wb_agro_agg <- wb_agro %>%
+        drop_na(SL.AGR.EMPL.ZS) %>%
+        group_by(iso3c) %>%
+        summarise(p_agro = mean( SL.AGR.EMPL.ZS, na.rm=TRUE))
 
 ## Cargo tipología de países
 countries <- read_csv('./data/country_classification.csv')
-countries <- countries %>% rename(p_asalariados_total=asalariados)
+#countries <- countries %>% rename(p_asalariados_total=asalariados)
 
-fao_agg <- fao_agg %>% left_join(countries, by = "iso3c")
+final <- fao_agg %>%
+        left_join(wb_agro_agg, by = "iso3c") %>%
+        left_join(countries, by = "iso3c")
+
+final <- final %>%
+        mutate(clst_pimsa_code = str_sub(cluster_pimsa, 1,2))
+
+
 
 #fao_agg %>%
 #        ggplot(aes(y=p_asalariados_agro, x=p_asalariados_total)) +
@@ -99,52 +117,30 @@ grey_scale <- c("#1b1b1b", "#484848", "#727272", "#a2a2a2","#dddddd")
 
 
 
-p1 <-fao_agg %>%
-        ggplot(aes(y=p_asalariados_agro, x=SL.AGR.EMPL.ZS, 
-                   color=C5, label=area)) +
+p1 <- final %>%
+        ggplot(aes(y=p_asalariados_agro, x=p_agro, 
+                   color=clst_pimsa_code)) +
         xlim(0,100) +
         ylim(0,100) +
         geom_point() +
         scale_color_viridis_d()+
-        labs(x='% población ocupada en Agro (ILOSTAT)',
+        labs(x='% población ocupada en Agro (World Bank Data)',
              y='% asalariados en Agro (FAOSTAT)',
              color="Tipo desarrollo capitalista") +
-        theme_minimal()
+        theme_minimal() +
+        theme(
+                legend.title = element_text(size = 14),
+                legend.text = element_text(size = 12),
+                legend.position = "bottom"
+                )
 
-p1
 
 ggsave('./paper_material/plots/grafico1.jpg', p1, 
-       width = 12, height=12,
+       width = 8, height=8,
        bg="white")
 
-
-#ggplotly(p1)
-
-##
-fao_agg %>%
-        group_by(C5) %>%
-        summarise(
-                mean_asal_total = weighted.mean(p_asalariados_total, w=SL.EMP.TOTL.SP.ZS),
-                mean_asal_agro = weighted.mean(p_asalariados_agro, w=SL.EMP.TOTL.SP.ZS),
-                  mean_agro = weighted.mean(SL.AGR.EMPL.ZS, w=SL.EMP.TOTL.SP.ZS),
-                  #mean_ind = weighted.mean(SL.IND.EMPL.ZS, w=SL.EMP.TOTL.SP.ZS),
-                  #mean_serv = weighted.mean(SL.SRV.EMPL.ZS, w=SL.EMP.TOTL.SP.ZS),
-                  poblacion = sum(SP.POP.TOTL),
-                  n=n()) %>%
-        mutate(p_poblacion = poblacion/sum(poblacion, na.rm=TRUE)) %>%
-        drop_na()
-
-fao_agg %>%
-        group_by(C5) %>%
-        summarise(mean_asal = mean(p_asalariados),
-                  min = min(p_asalariados),
-                  q1 = quantile(p_asalariados, probs=0.25),
-                  median_asal = median(p_asalariados),
-                  q3 = quantile(p_asalariados, probs=0.75),
-                  max = max(p_asalariados),
-                  n=n())
-
-fao_agg %>%
+library(gt)
+final %>%
         select(iso3c, country)  %>%
         gt() %>%
         tab_header(

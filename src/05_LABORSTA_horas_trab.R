@@ -11,7 +11,8 @@ horas <- get_ilostat("HOW_TEMP_SEX_ECO_NB_A",
                      ) %>%
         rename(iso3c = ref_area)
 
-var_region <- read_csv('./data/country_classification.csv')
+var_region <- read_csv('./data/country_classification.csv') %>%
+          mutate(clst_pimsa_code = str_sub(cluster_pimsa, 1,2))
 
 var_region %>%
         filter(!is.na(cluster_pimsa)) %>%
@@ -48,16 +49,25 @@ horas1 <- horas %>%
 
 
 horas1 %>%
-        group_by(iso3c, cluster_pimsa, classif1.label, classif_agg) %>%
+        
+        group_by(iso3c, cluster_pimsa, clst_pimsa_code, classif1.label, classif_agg) %>%
         summarise(hours = mean(obs_value, na.rm=TRUE),
                   n = n())  %>%
         ungroup() %>%
         ggplot() +
                 geom_boxplot(aes(x=classif1.label, y=hours, fill=classif_agg)) +
-                facet_wrap(~cluster_pimsa) +
+                facet_wrap(~clst_pimsa_code) +
+                labs(y="Cant. horas",
+                     x="Rama",
+                     fill="Rama agr.") +
                 theme_minimal() +
-                coord_flip()
+                coord_flip() +
+                theme(text = element_text(size=12.3),
+                      legend.position = "bottom")
 
+ggsave('./paper_material/plots/grafico4.jpg',  
+       width = 15, height=11,
+       bg="white")
 
 horas1 %>%
         select(iso3c, country, cluster_pimsa) %>%

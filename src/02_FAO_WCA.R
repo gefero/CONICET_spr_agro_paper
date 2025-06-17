@@ -87,7 +87,10 @@ arg2002 <- format_cna2002_arg() %>%
 
 
 ### Join con variables de región
-var_region <- read_csv('./data/country_classification.csv')
+var_region <- read_csv('./data/country_classification.csv') %>%
+        mutate(clst_pimsa_code = str_sub(cluster_pimsa, 1,2))
+
+table(var_region$cluster_pimsa, var_region$clst_pimsa_code)
 
 wca <- wca %>%
         bind_rows(arg2002)
@@ -159,7 +162,7 @@ items <- wca %>%
 wca_eaps <- wca %>%
         filter((str_detect(item, "Holdings with") | item_code =="27002") & element %in% c("Number", "Area")) %>%
         left_join(items) %>%
-        select(area_code:area, iso3c:ocde,
+        select(area_code:area, iso3c:clst_pimsa_code, 
                wca_round, wca_round_code, census_year, census_year_code, 
                item_code, item, item_recoded, item_recoded_agg, element, unit, value)
 
@@ -293,7 +296,7 @@ wca_eaps %>%
         filter(wca_round_code %in% c(1980, 1990, 2000, 2010)) %>%
         mutate(wca_round_code = as.character(wca_round_code)) %>%
         filter(item_recoded_agg == '9_holdings') %>%
-        group_by(cluster_pimsa, wca_round_code) %>%
+        group_by(cluster_pimsa, clst_pimsa_code, wca_round_code) %>%
         summarise(
                 exp = sum(number),
                 surf = sum(surf)
@@ -306,13 +309,13 @@ bind_rows(
         filter(item_recoded_agg == '9_holdings') %>%
         filter(iso3c != "RUS") %>%
         filter(cluster_pimsa == "C1. Cap. avanzado") %>%
-        group_by(cluster_pimsa, wca_round_code) %>%
+        group_by(cluster_pimsa, clst_pimsa_code, wca_round_code) %>%
         summarise(
                 exp = sum(number),
                 surf = sum(surf)
         ) %>%
         ungroup() %>%
-        mutate(cluster_pimsa = "C1. Cap. avanzado (excl. Rusia)")
+        mutate(clst_pimsa_code = "C1 (excluida Rusia)")
 ) %>%
 bind_rows(
         wca_eaps %>%
@@ -321,13 +324,13 @@ bind_rows(
                 filter(item_recoded_agg == '9_holdings') %>%
                 filter(iso3c != "CHN") %>%
                 filter(cluster_pimsa == "C3. Cap. extensión c/peso campo") %>%
-                group_by(cluster_pimsa, wca_round_code) %>%
+                group_by(cluster_pimsa, clst_pimsa_code, wca_round_code) %>%
                 summarise(
                         exp = sum(number),
                         surf = sum(surf)
                         ) %>%
                         ungroup() %>%
-                        mutate(cluster_pimsa = "C3. Cap. extensión c/peso campo (excl. China)")
+                        mutate(clst_pimsa_code = "C3 (excluida China)")
         ) %>%
 bind_rows(
         wca_eaps %>%
@@ -336,28 +339,31 @@ bind_rows(
                 filter(item_recoded_agg == '9_holdings') %>%
                 filter(iso3c != "IND") %>%
                 filter(cluster_pimsa == "C4. Cap. escasa extensión c/peso campo") %>%
-                group_by(cluster_pimsa, wca_round_code) %>%
+                group_by(cluster_pimsa, clst_pimsa_code, wca_round_code) %>%
                 summarise(
                         exp = sum(number),
                         surf = sum(surf)
                         ) %>%
-ungroup() %>%
-mutate(cluster_pimsa = "C4. Cap. escasa extensión c/peso campo (excl. India)")
+                ungroup() %>%
+                mutate(clst_pimsa_code = "C4 (excluida India)")
         ) %>%
         mutate(mean_surf = surf/exp) %>% 
+        mutate(clst_pimsa_code = if_else(is.na(clst_pimsa_code), 
+                                         "C9. Sin datos", clst_pimsa_code)
+        ) %>%
         ggplot() + 
                 geom_line(aes(x=wca_round_code, y=exp, 
-                              group=cluster_pimsa,
-                              color=cluster_pimsa), show.legend = FALSE) +
+                              group=clst_pimsa_code,
+                              color=clst_pimsa_code), show.legend = FALSE) +
                 labs(x="Ronda de censos agropecuarias (FAO)",
                      y="Explotaciones") +
         scale_y_continuous(labels = scales::comma) +
-                facet_wrap(~cluster_pimsa) +
+                facet_wrap(~clst_pimsa_code) +
         theme_minimal() +
         theme(text=element_text(size=12))
 
 ggsave('./paper_material/plots/grafico2.jpg',
-       width = 14, height=10,
+       width = 8, height=8,
        bg="white")
 
 
@@ -387,31 +393,41 @@ wca_eaps %>%
 wca_eaps_agg <- wca_eaps %>%
         filter(wca_round_code %in% c(1990, 2000, 2010, 2020)) %>% 
         filter(item_recoded != '9_holdings') %>%
-        group_by(cluster_pimsa, wca_round_code, item_recoded_agg) %>%
+        mutate(item_recoded_agg_spa = case_when(
+                item_recoded_agg == "0. No land" ~ "0. Sin tierra",
+                item_recoded_agg == "1. Land size 0-5" ~ "1. 0-5 has",
+                item_recoded_agg == "2. Land size 5-100" ~ "2. 5.1-100 has",
+                item_recoded_agg == "3. Land size 100.1-500" ~ "3. 100.1-500 has",
+                item_recoded_agg == "4. Land size >500" ~ "4. > 500 has")
+        ) %>%
+        mutate(clst_pimsa_code = if_else(is.na(clst_pimsa_code), 
+                                         "C9. Sin datos", clst_pimsa_code) 
+               ) %>%
+        group_by(cluster_pimsa, clst_pimsa_code, wca_round_code, item_recoded_agg_spa) %>%
         summarise(number = sum(number),
                   surf = sum(surf)) %>% 
         ungroup() %>%
         mutate(mean_area = surf / number) %>%
-        group_by(cluster_pimsa, wca_round_code) %>%
+        group_by(cluster_pimsa, clst_pimsa_code, wca_round_code) %>%
         mutate(p_area = surf / sum(surf) * 100,
                p_number = number / sum(number) * 100)
 
 wca_eaps_agg %>%
         mutate(wca_round_code = as.character(wca_round_code)) %>%
         ggplot() + 
-        geom_col(aes(x=wca_round_code, y=p_number, fill=item_recoded_agg)) +
+        geom_col(aes(x=wca_round_code, y=p_number, fill=item_recoded_agg_spa)) +
         scale_fill_viridis_d() +
-        facet_wrap(~cluster_pimsa) + 
+        facet_wrap(~clst_pimsa_code) + 
         labs(x="Ronda de censos agropecuarios (FAO)",
              y= "% expl.",
              fill="Estrato de tamaño (agrupado)") +
         theme_minimal() +
-        theme(text=element_text(size=16), 
+        theme(text=element_text(size=14), 
               legend.position = "bottom")
 
 
 ggsave('./paper_material/plots/grafico3.jpg',
-       width = 14, height=10,
+       width = 11, height=8,
        bg="white")
 
 wca_eaps %>%

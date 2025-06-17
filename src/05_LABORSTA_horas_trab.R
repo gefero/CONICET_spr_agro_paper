@@ -12,7 +12,7 @@ horas <- get_ilostat("HOW_TEMP_SEX_ECO_NB_A",
         rename(iso3c = ref_area)
 
 var_region <- read_csv('./data/country_classification.csv') %>%
-          mutate(clst_pimsa_code = str_sub(cluster_pimsa, 1,2))
+          mutate(clst_pimsa_code = str_sub(cluster_pimsa, 1,2)) 
 
 var_region %>%
         filter(!is.na(cluster_pimsa)) %>%
@@ -49,7 +49,8 @@ horas1 <- horas %>%
 
 
 horas1 %>%
-        
+        mutate(clst_pimsa_code = if_else(is.na(clst_pimsa_code), "C9. Sin datos",
+                                         clst_pimsa_code)) %>%
         group_by(iso3c, cluster_pimsa, clst_pimsa_code, classif1.label, classif_agg) %>%
         summarise(hours = mean(obs_value, na.rm=TRUE),
                   n = n())  %>%
@@ -66,7 +67,7 @@ horas1 %>%
                       legend.position = "bottom")
 
 ggsave('./paper_material/plots/grafico4.jpg',  
-       width = 15, height=11,
+       width = 10, height=8,
        bg="white")
 
 horas1 %>%
